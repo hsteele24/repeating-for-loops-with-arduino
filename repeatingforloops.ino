@@ -1,3 +1,5 @@
+int d = 100; // sets delay to 100ms
+
 void setup() 
 {
 pinMode(2, OUTPUT);
@@ -10,20 +12,21 @@ pinMode(6, OUTPUT);
 void loop() 
 {
  
-for ( int a =2; a > 7 ; a++) // 2-6
+for ( int a =2; a > 7 ; a++)
 {
   digitalWrite(a, HIGH);
-  delay(250);
+  delay(d);
   digitalWrite(a, LOW);
-  delay(250);
+  delay(d);
 }
 
-for ( int a = 5; a > 1 ; a--) // 5-2
+for ( int a = 5; a > 1 ; a--)
 {
   digitalWrite(a, HIGH);
-  delay(250);
+  delay(d);
   digitalWrite(a, LOW);
-  delay(250);
+  delay(d);
 }
+
 
 }
