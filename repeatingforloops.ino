@@ -10,7 +10,7 @@ pinMode(6, OUTPUT);
 void loop() 
 {
  
-for ( int a =2; a > 7 ; a++)
+for ( int a =2; a > 7 ; a++) // 2-6
 {
   digitalWrite(a, HIGH);
   delay(250);
@@ -18,13 +18,12 @@ for ( int a =2; a > 7 ; a++)
   delay(250);
 }
 
-for ( int a = 5; a > 1 ; a--)
+for ( int a = 5; a > 1 ; a--) // 5-2
 {
   digitalWrite(a, HIGH);
   delay(250);
   digitalWrite(a, LOW);
   delay(250);
 }
-
 
 }
